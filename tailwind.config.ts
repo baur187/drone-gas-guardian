@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -18,6 +19,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				sans: ['Inter', 'sans-serif'],
+				display: ['Montserrat', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -61,6 +66,40 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				brand: {
+					'50': '#f0f9ff',
+					'100': '#e0f2fe',
+					'200': '#b9e6fe',
+					'300': '#7cd4fd',
+					'400': '#36bffa',
+					'500': '#0ca5e9',
+					'600': '#0284c7',
+					'700': '#036ba1',
+					'800': '#075985',
+					'900': '#0c4a6e',
+					'950': '#082f49',
+				},
+				industry: {
+					'50': '#fefce8',
+					'100': '#fef9c3',
+					'200': '#fef08a',
+					'300': '#fde047',
+					'400': '#facc15',
+					'500': '#eab308',
+					'600': '#ca8a04',
+					'700': '#a16207',
+					'800': '#854d0e',
+					'900': '#713f12',
+					'950': '#422006',
+				},
+				thermal: {
+					'red': '#ff0000',
+					'orange': '#ff6600',
+					'yellow': '#ffcc00',
+					'green': '#00cc00',
+					'blue': '#0066ff',
+					'purple': '#6600ff',
 				}
 			},
 			borderRadius: {
@@ -84,11 +123,28 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': { opacity: '0' },
+					'100%': { opacity: '1' }
+				},
+				'fade-up': {
+					'0%': { opacity: '0', transform: 'translateY(20px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' }
+				},
+				'ping-slow': {
+					'75%, 100%': {
+						transform: 'scale(1.5)',
+						opacity: '0'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.5s ease-out forwards',
+				'fade-up': 'fade-up 0.7s ease-out forwards',
+				'ping-slow': 'ping-slow 2s cubic-bezier(0, 0, 0.2, 1) infinite'
 			}
 		}
 	},
