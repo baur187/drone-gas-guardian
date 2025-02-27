@@ -48,7 +48,7 @@ const HeroSection = () => {
             Protecting infrastructure, preventing disasters, and saving lives with cutting-edge aerial inspection technology.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-brand-600 hover:bg-brand-700 text-white px-8 py-3 rounded-md font-medium transition-colors">
+            <button className="bg-brand-500 hover:bg-brand-600 text-white px-8 py-3 rounded-md font-medium transition-colors">
               Schedule a Consultation
             </button>
             <button className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border border-white/20 px-8 py-3 rounded-md font-medium transition-colors">

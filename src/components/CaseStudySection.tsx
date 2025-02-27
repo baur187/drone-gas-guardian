@@ -100,7 +100,7 @@ const CaseStudySection = () => {
           <div className="bg-gray-50 rounded-xl overflow-hidden shadow-md">
             <div className="flex flex-col lg:flex-row">
               <div className="lg:w-1/2 relative">
-                <div className="absolute top-4 left-4 z-10 bg-brand-600 text-white text-xs font-bold px-2 py-1 rounded">
+                <div className="absolute top-4 left-4 z-10 bg-brand-500 text-white text-xs font-bold px-2 py-1 rounded">
                   CASE STUDY
                 </div>
                 <img 
@@ -111,7 +111,7 @@ const CaseStudySection = () => {
               </div>
               <div className="lg:w-1/2 p-8">
                 <div className="mb-2">
-                  <span className="text-sm font-medium text-brand-600">
+                  <span className="text-sm font-medium text-brand-500">
                     {caseStudies[currentIndex].industry}
                   </span>
                 </div>

@@ -40,35 +40,35 @@ const Navbar = () => {
             <div className="ml-10 flex items-center space-x-4">
               <a
                 href="#home"
-                className="text-gray-800 hover:text-brand-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                className="text-gray-800 hover:text-brand-500 px-3 py-2 rounded-md text-sm font-medium transition-colors"
               >
                 Home
               </a>
               <a
                 href="#services"
-                className="text-gray-800 hover:text-brand-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                className="text-gray-800 hover:text-brand-500 px-3 py-2 rounded-md text-sm font-medium transition-colors"
               >
                 Services
               </a>
               <a
                 href="#technology"
-                className="text-gray-800 hover:text-brand-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                className="text-gray-800 hover:text-brand-500 px-3 py-2 rounded-md text-sm font-medium transition-colors"
               >
                 Technology
               </a>
               <a
                 href="#benefits"
-                className="text-gray-800 hover:text-brand-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                className="text-gray-800 hover:text-brand-500 px-3 py-2 rounded-md text-sm font-medium transition-colors"
               >
                 Benefits
               </a>
               <a
                 href="#contact"
-                className="text-gray-800 hover:text-brand-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                className="text-gray-800 hover:text-brand-500 px-3 py-2 rounded-md text-sm font-medium transition-colors"
               >
                 Contact
               </a>
-              <button className="bg-brand-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-brand-700 transition-colors">
+              <button className="bg-brand-500 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-brand-600 transition-colors">
                 Schedule Demo
               </button>
             </div>
@@ -76,7 +76,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-800 hover:text-brand-600 focus:outline-none"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-800 hover:text-brand-500 focus:outline-none"
             >
               {isOpen ? (
                 <X className="block h-6 w-6" aria-hidden="true" />
@@ -97,40 +97,40 @@ const Navbar = () => {
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <a
             href="#home"
-            className="text-gray-800 hover:text-brand-600 block px-3 py-2 rounded-md text-base font-medium"
+            className="text-gray-800 hover:text-brand-500 block px-3 py-2 rounded-md text-base font-medium"
             onClick={() => setIsOpen(false)}
           >
             Home
           </a>
           <a
             href="#services"
-            className="text-gray-800 hover:text-brand-600 block px-3 py-2 rounded-md text-base font-medium"
+            className="text-gray-800 hover:text-brand-500 block px-3 py-2 rounded-md text-base font-medium"
             onClick={() => setIsOpen(false)}
           >
             Services
           </a>
           <a
             href="#technology"
-            className="text-gray-800 hover:text-brand-600 block px-3 py-2 rounded-md text-base font-medium"
+            className="text-gray-800 hover:text-brand-500 block px-3 py-2 rounded-md text-base font-medium"
             onClick={() => setIsOpen(false)}
           >
             Technology
           </a>
           <a
             href="#benefits"
-            className="text-gray-800 hover:text-brand-600 block px-3 py-2 rounded-md text-base font-medium"
+            className="text-gray-800 hover:text-brand-500 block px-3 py-2 rounded-md text-base font-medium"
             onClick={() => setIsOpen(false)}
           >
             Benefits
           </a>
           <a
             href="#contact"
-            className="text-gray-800 hover:text-brand-600 block px-3 py-2 rounded-md text-base font-medium"
+            className="text-gray-800 hover:text-brand-500 block px-3 py-2 rounded-md text-base font-medium"
             onClick={() => setIsOpen(false)}
           >
             Contact
           </a>
-          <button className="w-full text-center bg-brand-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-brand-700 transition-colors">
+          <button className="w-full text-center bg-brand-500 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-brand-600 transition-colors">
             Schedule Demo
           </button>
         </div>

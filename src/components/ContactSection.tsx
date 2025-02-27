@@ -72,7 +72,7 @@ const ContactSection = () => {
         <div className={`max-w-6xl mx-auto ${isVisible ? 'animate-fade-in' : 'opacity-0'}`} style={{ animationDelay: '0.2s' }}>
           <div className="bg-white rounded-xl shadow-lg overflow-hidden">
             <div className="flex flex-col lg:flex-row">
-              <div className="lg:w-2/5 bg-brand-600 text-white p-8 lg:p-12">
+              <div className="lg:w-2/5 bg-brand-500 text-white p-8 lg:p-12">
                 <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
                 <p className="text-white/80 mb-8">
                   Our team is ready to answer your questions and discuss how our solutions can be tailored to your specific requirements.
@@ -187,7 +187,7 @@ const ContactSection = () => {
                   
                   <button
                     type="submit"
-                    className="flex items-center justify-center space-x-2 bg-brand-600 hover:bg-brand-700 text-white px-6 py-3 rounded-md font-medium transition-colors"
+                    className="flex items-center justify-center space-x-2 bg-brand-500 hover:bg-brand-600 text-white px-6 py-3 rounded-md font-medium transition-colors"
                   >
                     <span>Send Message</span>
                     <Send size={16} />
