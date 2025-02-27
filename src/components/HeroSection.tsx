@@ -1,7 +1,10 @@
+
 import React, { useEffect, useRef } from 'react';
 import { ArrowDown } from 'lucide-react';
+
 const HeroSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
@@ -9,9 +12,11 @@ const HeroSection = () => {
         sectionRef.current.style.backgroundPositionY = `${scrollPosition * 0.5}px`;
       }
     };
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
   const scrollToNextSection = () => {
     const servicesSection = document.getElementById('services');
     if (servicesSection) {
@@ -20,16 +25,23 @@ const HeroSection = () => {
       });
     }
   };
-  return <section id="home" ref={sectionRef} className="hero-section relative h-screen flex items-center justify-center bg-cover bg-center" style={{
-    backgroundImage: 'url(public/lovable-uploads/6c7d0918-87be-4f0d-87c2-f17aabbb3391.png)'
-  }}>
+
+  return (
+    <section
+      id="home"
+      ref={sectionRef}
+      className="hero-section relative h-screen flex items-center justify-center bg-cover bg-center"
+      style={{
+        backgroundImage: 'url(public/lovable-uploads/6c7d0918-87be-4f0d-87c2-f17aabbb3391.png)'
+      }}
+    >
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background/90"></div>
       <div className="container mx-auto px-4 z-10 reveal-animation">
         <div className="max-w-3xl mx-auto text-center">
           <div className="inline-block rounded-full bg-brand-100 px-3 py-1 text-sm font-medium text-brand-800 mb-6">
             Industry-Leading Technology
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6 leading-tight text-red-900 text-center">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6 leading-tight text-white">
             Advanced Drone Solutions for Gas Leak Detection
           </h1>
           <p className="text-xl text-white/90 mb-8">
@@ -45,9 +57,15 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      <button onClick={scrollToNextSection} className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white hover:text-brand-400 transition-colors animate-bounce" aria-label="Scroll down">
+      <button
+        onClick={scrollToNextSection}
+        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white hover:text-brand-400 transition-colors animate-bounce"
+        aria-label="Scroll down"
+      >
         <ArrowDown size={24} />
       </button>
-    </section>;
+    </section>
+  );
 };
+
 export default HeroSection;
