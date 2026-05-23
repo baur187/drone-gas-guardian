@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 
 const Navbar = () => {
@@ -68,6 +69,13 @@ const Navbar = () => {
               >
                 Contact
               </a>
+              <Link
+                to="/drilling-monitor"
+                className="bg-orange-500/20 text-orange-300 border border-orange-500/40 px-3 py-1.5 rounded-md text-sm font-medium hover:bg-orange-500/30 transition-colors flex items-center gap-1.5"
+              >
+                <span className="w-1.5 h-1.5 rounded-full bg-orange-400 animate-ping-slow" />
+                Live Monitor
+              </Link>
               <button className="bg-brand-500 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-brand-600 transition-colors">
                 Schedule Demo
               </button>
@@ -130,6 +138,13 @@ const Navbar = () => {
           >
             Contact
           </a>
+          <Link
+            to="/drilling-monitor"
+            className="block text-center bg-orange-500/20 text-orange-300 border border-orange-500/40 px-4 py-2 rounded-md text-sm font-medium"
+            onClick={() => setIsOpen(false)}
+          >
+            Live Monitor
+          </Link>
           <button className="w-full text-center bg-brand-500 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-brand-600 transition-colors">
             Schedule Demo
           </button>
