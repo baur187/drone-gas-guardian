@@ -70,6 +70,12 @@ const Navbar = () => {
                 Contact
               </a>
               <Link
+                to="/usage"
+                className="text-gray-800 hover:text-brand-500 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+              >
+                Usage Guide
+              </Link>
+              <Link
                 to="/drilling-monitor"
                 className="bg-orange-500/20 text-orange-300 border border-orange-500/40 px-3 py-1.5 rounded-md text-sm font-medium hover:bg-orange-500/30 transition-colors flex items-center gap-1.5"
               >
@@ -138,6 +144,13 @@ const Navbar = () => {
           >
             Contact
           </a>
+          <Link
+            to="/usage"
+            className="text-gray-800 hover:text-brand-500 block px-3 py-2 rounded-md text-base font-medium"
+            onClick={() => setIsOpen(false)}
+          >
+            Usage Guide
+          </Link>
           <Link
             to="/drilling-monitor"
             className="block text-center bg-orange-500/20 text-orange-300 border border-orange-500/40 px-4 py-2 rounded-md text-sm font-medium"
