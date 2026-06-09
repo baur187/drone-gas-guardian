@@ -6,6 +6,7 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import DrillingMonitor from "./pages/DrillingMonitor";
 import Usage from "./pages/Usage";
+import WesLanding from "./pages/WesLanding";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -20,6 +21,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/drilling-monitor" element={<DrillingMonitor />} />
           <Route path="/usage" element={<Usage />} />
+          <Route path="/wes" element={<WesLanding />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
