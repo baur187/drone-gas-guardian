@@ -5,6 +5,8 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import DrillingMonitor from "./pages/DrillingMonitor";
+import Usage from "./pages/Usage";
+import WesLanding from "./pages/WesLanding";
 import NotFound from "./pages/NotFound";
 import WesLanding from "./pages/wes/WesLanding";
 
@@ -20,6 +22,8 @@ const App = () => (
           <Route path="/" element={<WesLanding />} />
           <Route path="/drone-gas" element={<Index />} />
           <Route path="/drilling-monitor" element={<DrillingMonitor />} />
+          <Route path="/usage" element={<Usage />} />
+          <Route path="/wes" element={<WesLanding />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
